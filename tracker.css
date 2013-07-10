@@ -1,0 +1,19 @@
+body {
+
+}
+
+#container {
+	height: 500px;
+	width: 100%;
+}
+
+#map-canvas {
+	height: 100%;
+	width: 700px;
+	float: left;
+}
+
+#tracker-menu {
+	height: 100%;
+	background-color: #ff0000;
+}
