@@ -9,36 +9,50 @@
 
 		<title>test</title>
 		<meta name="description" content="" />
-		<meta name="author" content="sh: -c: line 0: `echo Libraro, Luke (CHI-DRF)' (2)" />
+		<meta name="author" content="Luke Libraro" />
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="tracker.css" />
+
+		<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMgDtApQpF0sDfacd_9R2Vwwp7drII9Mo&sensor=true"></script>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+				
+		<script type="text/javascript">
+			function initialize() {
+				var mapOptions = {
+					center : new google.maps.LatLng(38.000, -97.000),
+					zoom : 4,
+					mapTypeId : google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+			}
+
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 	</head>
 
 	<body>
 		<div>
 			<header>
-				<h1>test</h1>
+				<h1>USPS Present Tracker</h1>
 			</header>
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
-			</nav>
 
-			<div>
+			<div id="container">
+				<div id="map-canvas">
 
+				</div>
+				<div id="tracker-menu">
+
+				</div>
 			</div>
 
 			<footer>
 				<p>
-					&copy; Copyright  by sh: -c: line 0: `echo Libraro, Luke (CHI-DRF)' (2)
+					&copy; Luke Libraro
 				</p>
 			</footer>
 		</div>
