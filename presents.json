@@ -1,29 +1,40 @@
 {
-  "sender": {
-    "name": "Luke",
-    "city": "Chicago, IL",
-    "zip": "60611",
-    "profile_pic": "profile-pics/luke-profile.jpg",
-    "latitude": "41.894132",
-    "longitude": "-87.625552"
-  },
-  "recipients": [
-    {
-      "1": {
-        "name": "Amy",
-        "city": "Richmond, VA",
-        "zip": "23220",
-        "profile_pic": "profile-pics/amy-profile.jpg",
-        "status": "Delivered",
-        "stops": [
-          {
-            "1": {
-              "latitude": "37.548846",
-              "longitude": "-77.461406"
-            }
-          }
-        ]
-      }
-    }
-  ]
+	"sender": {
+		"name": "Luke",
+		"city": "Chicago, IL",
+		"zip": "60611",
+		"profile_pic": "profile-pics/luke-profile.jpg",
+		"latitude": "41.894132",
+		"longitude": "-87.625552"
+	},
+	"recipients": [
+		{
+			"name": "Amy",
+			"city": "Richmond, VA",
+			"zip": "23220",
+			"profile_pic": "profile-pics/amy-profile.jpg",
+			"status": "Delivered",
+			"stops": [
+				{
+					"id": "1",
+					"latitude": "41.894132",
+					"longitude": "-87.625552",
+					"final": false,
+					"desc": "departed"
+				}, {
+					"id": "2",
+					"latitude": "39.2833",
+					"longitude": "-76.6167",
+					"final": false,
+					"desc": "transferred"
+				}, {
+					"id": "3",
+					"latitude": "37.548846",
+					"longitude": "-77.461406",
+					"final": true,
+					"desc": "delivered"
+				}
+			]
+		}
+	]
 }

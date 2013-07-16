@@ -18,12 +18,14 @@ h1 {
 
 #map-canvas {
 	height: 100%;
-	width: 700px;
+	width: 70%;
 	float: left;
 }
 
 #tracker-menu {
 	height: 100%;
+	width: 30%;
+	float: right;
 }
 
 .recipient-info-item {
