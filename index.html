@@ -2,100 +2,105 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-	<!-- Basic Page Needs -->
-	<meta charset="utf-8">
-	<title>USPS - Gift Tracker</title>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+	<!--<![endif]-->
+	<head>
+		<!-- Basic Page Needs -->
+		<meta charset="utf-8">
+		<title>USPS - Gift Tracker</title>
 
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Javascript -->
-	<script type="text/javascript"
+		<!-- Javascript -->
+		<script type="text/javascript"
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMgDtApQpF0sDfacd_9R2Vwwp7drII9Mo&sensor=true"></script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/styles_normalize.css">
+		<link rel="stylesheet" href="css/styles_main.css">
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/styles_normalize.css">
-	<link rel="stylesheet" href="css/styles_main.css">
+		<script type="text/javascript">
+			$(document).ready(function() {
 
-	<script type="text/javascript">
-		$(document).ready(function(){
+				$('#friendPanel').hide();
+				$('.iPanel1').hide();
+				$('.iPanel2').hide();
+				$('.iPanel3').hide();
+				$('.iPanel4').hide();
 
-			$('#friendPanel').hide();
-			$('.iPanel1').hide();
-			$('.iPanel2').hide();
-			$('.iPanel3').hide();
-			$('.iPanel4').hide();
-	
-			$('#loginPanel').click(function() {
-				$('#loginPanel').hide();
-				$('#friendPanel').show('fast');
+				$('#loginPanel').click(function() {
+					$('#loginPanel').hide();
+					$('#friendPanel').show('fast');
+				});
+
+				$('.fPanel1').click(function() {
+					$('.iPanel2').hide('fast');
+					$('.iPanel3').hide('fast');
+					$('.iPanel4').hide('fast');
+					$('.iPanel1').slideToggle('fast');
+				});
+
+				$('.fPanel2').click(function() {
+					$('.iPanel3').hide('fast');
+					$('.iPanel4').hide('fast');
+					$('.iPanel1').hide('fast');
+					$('.iPanel2').slideToggle('fast');
+				});
+
+				$('.fPanel3').click(function() {
+					$('.iPanel4').hide('fast');
+					$('.iPanel1').hide('fast');
+					$('.iPanel2').hide('fast');
+					$('.iPanel3').slideToggle('fast');
+				});
+
+				$('.fPanel4').click(function() {
+					$('.iPanel1').hide('fast');
+					$('.iPanel2').hide('fast');
+					$('.iPanel3').hide('fast');
+					$('.iPanel4').slideToggle('fast');
+				});
+
 			});
+		</script>
+		<script src="js/tracker.js"></script>
+	</head>
 
-			$('.fPanel1').click(function() {
-				$('.iPanel2').hide('fast');
-				$('.iPanel3').hide('fast');
-				$('.iPanel4').hide('fast');
-				$('.iPanel1').slideToggle('fast');
-			});
-
-			$('.fPanel2').click(function() {
-				$('.iPanel3').hide('fast');
-				$('.iPanel4').hide('fast');
-				$('.iPanel1').hide('fast');
-				$('.iPanel2').slideToggle('fast');
-			});
-
-			$('.fPanel3').click(function() {
-				$('.iPanel4').hide('fast');
-				$('.iPanel1').hide('fast');
-				$('.iPanel2').hide('fast');
-				$('.iPanel3').slideToggle('fast');
-			});
-
-			$('.fPanel4').click(function() {
-				$('.iPanel1').hide('fast');
-				$('.iPanel2').hide('fast');
-				$('.iPanel3').hide('fast');
-				$('.iPanel4').slideToggle('fast');
-			});
-
-		});
-	</script>
-	<script src="js/tracker.js"></script>
-</head>
-
-<body>
-
-<div id="wrapper">
-	<div id="mapCanvas"></div>
-	<div id="sidebar">
-		<div id="loginPanel"><img src="img/login_panel.png"></div>
-		<div id="friendPanel">
-			<img class="fPanel1" src="img/friend1_top.png">
-			<div class="iPanel1">
-				Stuff goes here
+	<body>
+		<div id="wrapper">
+			<div id="mapCanvas"></div>
+			<div id="sidebar">
+				<div id="loginPanel"><img src="img/login_panel.png">
+				</div>
+				<div id="friendPanel">
+					<img class="fPanel1" src="img/friend1_top.png">
+					<div class="iPanel1"></div>
+					<img class="fPanel2" src="img/friend2_top.png">
+					<div class="iPanel2"></div>
+					<img class="fPanel3" src="img/friend3_top.png">
+					<div class="iPanel3"></div>
+					<img class="fPanel4" src="img/friend4_top.png">
+					<div class="iPanel4"></div>
+				</div>
 			</div>
-			<img class="fPanel2" src="img/friend2_top.png">
-			<div class="iPanel2">
-				Stuff goes here
-			</div>
-			<img class="fPanel3" src="img/friend3_top.png">
-			<div class="iPanel3">
-				Stuff goes here
-			</div>
-			<img class="fPanel4" src="img/friend4_top.png">
-			<div class="iPanel4">
-				Stuff goes here
-			</div>
+			<div class="break"></div>
 		</div>
-	</div>
-	<div class="break"></div>
-</div>
-
-</body>
+		<table id="tracking-table-template" class="tracking-info-item" style="display:none">
+			<tr>
+				<th>Location</th>
+				<th>Date</th>
+				<th>Status</th>
+			</tr>
+			<tr id="tracking-row-template" class="tracking-row-item">
+				<td class="loc"> </td>
+				<td class="date"> </td>
+				<td class="status"> </td>
+			</tr>
+		</table>
+	</body>
 
 </html>

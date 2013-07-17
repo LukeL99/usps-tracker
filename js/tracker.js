@@ -123,14 +123,24 @@ function clearMap(){
 
 function buildRecipientList(recipients) {
 	var i = 1;
-	$.each(recipients, function(key, val) {
+	$.each(recipients, function(key, recipient) {
 		var recipientImg = $('.fPanel' + i.toString());
-		// recipient_div.find('.recipient-icon-img').prop('src', val['profile_pic']);
-		// recipient_div.find('.recipient-name').text(val['name']);
-		// recipient_div.find('.recipient-city').text(val['city']);
-		// recipient_div.find('.recipient-delivery-status').text(val['status']);
-		// recipient_div.appendTo('#tracker-menu').show();
-		recipientImg.bind('click', val, animateDelivery);
+		var recipientDiv = $('.iPanel' + i.toString());
+		var table = $('#tracking-table-template').clone();
+		table.find('#tracking-row-template').remove();
+		table.removeAttr('id');
+		table.appendTo(recipientDiv);
+		
+		$.each(recipient['stops'], function(key2, stop){
+			var tr = $('#tracking-row-template').clone();
+			tr.removeAttr('id');
+			tr.appendTo(table);
+			tr.find('.loc').html(stop['loc']);
+			tr.find('.status').html(stop['desc']);
+		});
+		
+		table.show();
+		recipientImg.bind('click', recipient, animateDelivery);
 		i++;
 	});
 }
