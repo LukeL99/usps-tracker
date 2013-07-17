@@ -1,7 +1,7 @@
 var map;
 var sender;
 
-function initialize() {
+$(document).ready(function(){
 	var mapOptions = {
 		center : new google.maps.LatLng(38.000, -97.000),
 		zoom : 4,
@@ -26,7 +26,7 @@ function initialize() {
 			animation : google.maps.Animation.DROP
 		});
 	});
-}
+});
 
 function animate_delivery(event) {
 	// ANIMATION CONSTANTS
