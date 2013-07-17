@@ -18,6 +18,24 @@ body {
 	background: #ccc url('../img/site_bgpat.gif') repeat-x;
 }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th {
+	text-align: left;
+}
+
+tr.alt td 
+{
+	background-color: #E2261C;
+}
+
 a:link,
 a:visited {
 	color: #807e79;
