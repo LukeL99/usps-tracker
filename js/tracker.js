@@ -1,5 +1,6 @@
 var map;
 var sender;
+var senderMarker;
 var markersToDelete = [];
 var linesToDelete = [];
 var bounceItem = null;
@@ -22,7 +23,7 @@ $(document).ready(function() {
 
 		var sender_icon = sender['profile_pic'];
 
-		var senderMarker = new google.maps.Marker({
+		senderMarker = new google.maps.Marker({
 			position : sender.latLng,
 			map : map,
 			icon : sender_icon,
@@ -100,7 +101,7 @@ function animateDelivery(event) {
 				animation : google.maps.Animation.DROP
 			});
 			markersToDelete.push(leg);
-			
+
 			segCount = 0;
 		} else {
 			endAnimation();
@@ -116,13 +117,14 @@ function animateDelivery(event) {
 			animation : google.maps.Animation.DROP
 		}));
 	}
+
 }
 
 function clearMap() {
 	$.each(markersToDelete, function(key, val) {
 		val.setMap(null);
 	});
-	$.each(linesToDelete, function(key, val){
+	$.each(linesToDelete, function(key, val) {
 		val.setMap(null);
 	});
 	markersToDelete = [];
@@ -130,13 +132,19 @@ function clearMap() {
 };
 
 function bounceMarker(event) {
-	clearBounceMarker();
-	bounceItem = markersToDelete[event.data];
-	bounceItem.setAnimation(google.maps.Animation.BOUNCE);
+	if (bounceItem != markersToDelete[event.data]) {
+		clearBounceMarker();
+		if (event.data == 0) {
+			bounceItem = senderMarker;
+		} else {
+			bounceItem = markersToDelete[event.data - 1];
+		}
+		bounceItem.setAnimation(google.maps.Animation.BOUNCE);
+	}
 };
 
 function clearBounceMarker() {
-	if(bounceItem != null){
+	if (bounceItem != null) {
 		bounceItem.setAnimation(null);
 	}
 	bounceItem = null;
@@ -145,7 +153,7 @@ function clearBounceMarker() {
 function buildRecipientList(recipients) {
 	var i = 1;
 	$.each(recipients, function(key, recipient) {
-		var j = 0
+		var j = 0;
 		var recipientImg = $('.fPanel' + i.toString());
 		var recipientDiv = $('.iPanel' + i.toString());
 		var table = $('#tracking-table-template').clone();
@@ -158,14 +166,14 @@ function buildRecipientList(recipients) {
 		$.each(recipient['stops'], function(key2, stop) {
 			var tr = $('#tracking-row-template').clone();
 			tr.removeAttr('id');
-			if(alt){
+			if (alt) {
 				tr.addClass('alt');
 			}
 			alt = !alt;
 			tr.appendTo(table);
 			tr.find('.loc').html(stop['loc']);
 			tr.find('.status').html(stop['desc']);
-			
+
 			tr.bind('click', j, bounceMarker);
 			j++;
 		});
