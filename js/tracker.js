@@ -7,7 +7,7 @@ function initialize() {
 		zoom : 4,
 		mapTypeId : google.maps.MapTypeId.ROADMAP
 	};
-	map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	map = new google.maps.Map(document.getElementById("mapCanvas"), mapOptions);
 
 	$.getJSON('presents.json', function(data) {
 		sender = data['sender'];
