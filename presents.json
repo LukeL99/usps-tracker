@@ -20,19 +20,22 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed"
+					"desc": "departed",
+					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
 					"latitude": "39.2833",
 					"longitude": "-76.6167",
 					"final": false,
-					"desc": "transferred"
+					"desc": "transferred",
+					"loc": "Baltimore, MD"
 				}, {
 					"id": "3",
 					"latitude": "37.548846",
 					"longitude": "-77.461406",
 					"final": true,
-					"desc": "delivered"
+					"desc": "delivered",
+					"loc": "Richmond, VA"
 				}
 			]
 		},
@@ -48,19 +51,22 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed"
+					"desc": "departed",
+					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
-					"latitude": "39.2833",
-					"longitude": "-76.6167",
+					"latitude": "38.2542",
+					"longitude": "-85.7594",
 					"final": false,
-					"desc": "transferred"
+					"desc": "transferred",
+					"loc": "Louisville, KY"
 				}, {
 					"id": "3",
-					"latitude": "37.548846",
-					"longitude": "-77.461406",
+					"latitude": "38.070995",
+					"longitude": "-84.593925",
 					"final": true,
-					"desc": "delivered"
+					"desc": "delivered",
+					"loc": "Lexington, KY"
 				}
 			]
 		},
@@ -76,19 +82,29 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed"
+					"desc": "departed",
+					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
-					"latitude": "39.2833",
-					"longitude": "-76.6167",
+					"latitude": "32.802955",
+					"longitude": "-96.769923",
 					"final": false,
-					"desc": "transferred"
+					"desc": "transferred",
+					"loc": "Dallas, TX"
 				}, {
 					"id": "3",
-					"latitude": "37.548846",
-					"longitude": "-77.461406",
-					"final": true,
-					"desc": "delivered"
+					"latitude": "30.267153",
+					"longitude": "-97.7430608",
+					"final": false,
+					"desc": "transferred",
+					"loc": "Austin, TX"
+				}, {
+					"id": "4",
+					"latitude": "29.4241219",
+					"longitude": "-98.4936282",
+					"final": false,
+					"desc": "delivered",
+					"loc": "San Antonio, TX"
 				}
 			]
 		},
@@ -104,19 +120,15 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed"
+					"desc": "departed",
+					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
-					"latitude": "39.2833",
-					"longitude": "-76.6167",
-					"final": false,
-					"desc": "transferred"
-				}, {
-					"id": "3",
-					"latitude": "37.548846",
-					"longitude": "-77.461406",
+					"latitude": "37.7749295",
+					"longitude": "-122.4194155",
 					"final": true,
-					"desc": "delivered"
+					"desc": "delivered",
+					"loc": "San Francisco, CA"
 				}
 			]
 		}
