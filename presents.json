@@ -3,7 +3,7 @@
 		"name": "Luke",
 		"city": "Chicago, IL",
 		"zip": "60611",
-		"profile_pic": "profile-pics/luke-profile.jpg",
+		"profile_pic": "img/luke-profile.jpg",
 		"latitude": "41.894132",
 		"longitude": "-87.625552"
 	},
@@ -12,7 +12,7 @@
 			"name": "Amy",
 			"city": "Richmond, VA",
 			"zip": "23220",
-			"profile_pic": "profile-pics/amy-profile.jpg",
+			"profile_pic": "img/friend1_thumb.jpg",
 			"status": "Delivered",
 			"stops": [
 				{
@@ -43,7 +43,7 @@
 			"name": "Amy",
 			"city": "Richmond, VA",
 			"zip": "23220",
-			"profile_pic": "profile-pics/amy-profile.jpg",
+			"profile_pic": "img/friend2_thumb.jpg",
 			"status": "Delivered",
 			"stops": [
 				{
@@ -74,7 +74,7 @@
 			"name": "Amy",
 			"city": "Richmond, VA",
 			"zip": "23220",
-			"profile_pic": "profile-pics/amy-profile.jpg",
+			"profile_pic": "img/friend3_thumb.jpg",
 			"status": "Delivered",
 			"stops": [
 				{
@@ -112,7 +112,7 @@
 			"name": "Amy",
 			"city": "Richmond, VA",
 			"zip": "23220",
-			"profile_pic": "profile-pics/amy-profile.jpg",
+			"profile_pic": "img/friend4_thumb.jpg",
 			"status": "Delivered",
 			"stops": [
 				{
