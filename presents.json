@@ -19,6 +19,7 @@
 					"id": "1",
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
+					"date": "12/20/13",
 					"final": false,
 					"desc": "Departed",
 					"loc": "Chicago, IL"
@@ -26,6 +27,7 @@
 					"id": "2",
 					"latitude": "39.2833",
 					"longitude": "-76.6167",
+					"date": "12/21/13",
 					"final": false,
 					"desc": "Transferred",
 					"loc": "Baltimore, MD"
@@ -33,6 +35,7 @@
 					"id": "3",
 					"latitude": "37.548846",
 					"longitude": "-77.461406",
+					"date": "12/22/13",
 					"final": true,
 					"desc": "Delivered",
 					"loc": "Richmond, VA"
@@ -50,6 +53,7 @@
 					"id": "1",
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
+					"date": "12/21/13",
 					"final": false,
 					"desc": "Departed",
 					"loc": "Chicago, IL"
@@ -57,6 +61,7 @@
 					"id": "2",
 					"latitude": "38.2542",
 					"longitude": "-85.7594",
+					"date": "12/22/13",
 					"final": false,
 					"desc": "Transferred",
 					"loc": "Louisville, KY"
@@ -64,6 +69,7 @@
 					"id": "3",
 					"latitude": "38.070995",
 					"longitude": "-84.593925",
+					"date": "12/23/13",
 					"final": true,
 					"desc": "Delivered",
 					"loc": "Lexington, KY"
@@ -81,6 +87,7 @@
 					"id": "1",
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
+					"date": "12/20/13",
 					"final": false,
 					"desc": "Departed",
 					"loc": "Chicago, IL"
@@ -88,6 +95,7 @@
 					"id": "2",
 					"latitude": "32.802955",
 					"longitude": "-96.769923",
+					"date": "12/21/13",
 					"final": false,
 					"desc": "Transferred",
 					"loc": "Dallas, TX"
@@ -95,6 +103,7 @@
 					"id": "3",
 					"latitude": "30.267153",
 					"longitude": "-97.7430608",
+					"date": "12/21/13",
 					"final": false,
 					"desc": "Transferred",
 					"loc": "Austin, TX"
@@ -102,6 +111,7 @@
 					"id": "4",
 					"latitude": "29.4241219",
 					"longitude": "-98.4936282",
+					"date": "12/22/13",
 					"final": false,
 					"desc": "Delivered",
 					"loc": "San Antonio, TX"
@@ -119,6 +129,7 @@
 					"id": "1",
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
+					"date": "12/20/13",
 					"final": false,
 					"desc": "Departed",
 					"loc": "Chicago, IL"
@@ -126,6 +137,7 @@
 					"id": "2",
 					"latitude": "37.7749295",
 					"longitude": "-122.4194155",
+					"date": "12/21/13",
 					"final": true,
 					"desc": "Delivered",
 					"loc": "San Francisco, CA"

@@ -173,7 +173,7 @@ function buildRecipientList(recipients) {
 			tr.appendTo(table);
 			tr.find('.loc').html(stop['loc']);
 			tr.find('.status').html(stop['desc']);
-
+			tr.find('.date').html(stop['date']);
 			tr.bind('click', j, bounceMarker);
 			j++;
 		});
