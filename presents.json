@@ -20,21 +20,21 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed",
+					"desc": "Departed",
 					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
 					"latitude": "39.2833",
 					"longitude": "-76.6167",
 					"final": false,
-					"desc": "transferred",
+					"desc": "Transferred",
 					"loc": "Baltimore, MD"
 				}, {
 					"id": "3",
 					"latitude": "37.548846",
 					"longitude": "-77.461406",
 					"final": true,
-					"desc": "delivered",
+					"desc": "Delivered",
 					"loc": "Richmond, VA"
 				}
 			]
@@ -51,21 +51,21 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed",
+					"desc": "Departed",
 					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
 					"latitude": "38.2542",
 					"longitude": "-85.7594",
 					"final": false,
-					"desc": "transferred",
+					"desc": "Transferred",
 					"loc": "Louisville, KY"
 				}, {
 					"id": "3",
 					"latitude": "38.070995",
 					"longitude": "-84.593925",
 					"final": true,
-					"desc": "delivered",
+					"desc": "Delivered",
 					"loc": "Lexington, KY"
 				}
 			]
@@ -82,28 +82,28 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed",
+					"desc": "Departed",
 					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
 					"latitude": "32.802955",
 					"longitude": "-96.769923",
 					"final": false,
-					"desc": "transferred",
+					"desc": "Transferred",
 					"loc": "Dallas, TX"
 				}, {
 					"id": "3",
 					"latitude": "30.267153",
 					"longitude": "-97.7430608",
 					"final": false,
-					"desc": "transferred",
+					"desc": "Transferred",
 					"loc": "Austin, TX"
 				}, {
 					"id": "4",
 					"latitude": "29.4241219",
 					"longitude": "-98.4936282",
 					"final": false,
-					"desc": "delivered",
+					"desc": "Delivered",
 					"loc": "San Antonio, TX"
 				}
 			]
@@ -120,14 +120,14 @@
 					"latitude": "41.894132",
 					"longitude": "-87.625552",
 					"final": false,
-					"desc": "departed",
+					"desc": "Departed",
 					"loc": "Chicago, IL"
 				}, {
 					"id": "2",
 					"latitude": "37.7749295",
 					"longitude": "-122.4194155",
 					"final": true,
-					"desc": "delivered",
+					"desc": "Delivered",
 					"loc": "San Francisco, CA"
 				}
 			]
